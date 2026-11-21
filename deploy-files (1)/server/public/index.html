@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nebulaa AI | Chatbot and Voice Assistant</title>
+<meta name="description" content="Nebulaa AI, the virtual assistant of Nebulaa Institute of Technology, Trichy. Ask about courses, internships, fees and admission, and our location.">
+<link rel="icon" href="/logo.png">
+<style>
+  :root{--ink:#1B1026;--mu:#5A5468;--ac:#4A2560;--glass:rgba(255,255,255,.62);--line:rgba(255,255,255,.8)}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:32px 20px;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.5;
+    background:radial-gradient(110% 60% at 88% 6%,#fff 0%,rgba(255,255,255,0) 58%),radial-gradient(90% 55% at 6% 34%,#CDD4E4 0%,rgba(205,212,228,0) 62%),radial-gradient(100% 60% at 75% 100%,#BDC6DA 0%,rgba(189,198,218,0) 66%),#E4E7EF}
+  main{width:min(720px,100%);text-align:center}
+  .mk{width:132px;height:132px;margin:0 auto 22px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--line);box-shadow:inset 0 1px 0 #fff,0 18px 40px rgba(60,70,100,.18);animation:fl 5s ease-in-out infinite}
+  .mk img{width:92px;height:92px;object-fit:contain}
+  h1{margin:0 0 8px;font-size:clamp(28px,5vw,40px);font-weight:600;letter-spacing:-.02em}
+  p.sub{margin:0 auto 32px;max-width:520px;font-size:clamp(15px,2.4vw,17px);color:var(--mu)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;text-align:left}
+  a.card{display:block;padding:20px 22px;border-radius:22px;text-decoration:none;color:inherit;background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 8px 22px rgba(60,70,100,.1);transition:transform .2s,box-shadow .2s}
+  a.card:hover,a.card:focus-visible{transform:translateY(-3px);box-shadow:inset 0 1px 0 #fff,0 14px 30px rgba(60,70,100,.18);outline:2px solid var(--ac);outline-offset:2px}
+  .card b{display:block;font-size:17px;margin-bottom:4px}.card span{font-size:14px;color:var(--mu)}
+  .card .go{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--ac)}
+  .tip{margin:26px 0 0;font-size:13.5px;color:var(--mu)}
+  footer{margin-top:34px;font-size:12.5px;color:var(--mu)}
+  @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="mk"><img src="/logo.png" alt="Nebulaa AI owl logo"></div>
+  <h1>Nebulaa AI</h1>
+  <p class="sub">The virtual assistant of Nebulaa Institute of Technology, Trichy. Ask about courses, internships, fees and admission, and our location, by tapping, typing or speaking.</p>
+  <div class="cards">
+    <a class="card" href="/demo.html"><b>Chatbot</b><span>Tap the owl button to chat, get instant answers and send an enquiry.</span><span class="go">Open the chatbot &rarr;</span></a>
+    <a class="card" href="/voice.html"><b>Voice assistant</b><span>Speak your question in English and hear the answer. Best in Google Chrome.</span><span class="go">Open the voice assistant &rarr;</span></a>
+  </div>
+  <p class="tip">You can also tap the owl at the bottom right of this page to start chatting.</p>
+  <footer>Internship project at Nebulaa Institute of Technology, Trichy</footer>
+</main>
+<script src="/widget.js" defer></script>
+</body>
+</html>
